@@ -38,15 +38,19 @@
   :bind (("C-x C-<up>" . fold-active-region)
 	 ("C-x C-<down>" . fold-this-unfold-at-point)))
 
+(use-package elpy
+  :ensure t
+  :confing (elpy-enable))
+
+
+;;(use-package emms
+;;  :ensure t)
 ;;; Themes configuration
 (use-package helm-themes
   :ensure t)
 
 (use-package monokai-theme
   :ensure t )
-
-(use-package spacemacs-theme
-  :ensure t)
 
 (use-package sublime-themes
   :ensure t)
